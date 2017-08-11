@@ -136,9 +136,7 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
         Class aClass = FragmentList.get(i);
         Class<?> clazz = null;
         try {
-            //参数  “Demo” 是类的全名，如果在包结构下，要有完整包路径 比如： com.test.Demo
             clazz = Class.forName(aClass.getName());
-            //“Demo”类必须有默认构造方法，否则会抛出异常
             Fragment Fragment = (Fragment) clazz.newInstance();
             android.support.v4.app.FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(mReplaceLayout, Fragment);
