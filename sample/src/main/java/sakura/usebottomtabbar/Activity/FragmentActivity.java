@@ -27,10 +27,10 @@ public class FragmentActivity extends AppCompatActivity {
         ((BottomTabBar) findViewById(R.id.BottomTabBar))
                 .initFragmentorViewPager(getSupportFragmentManager())
                 .addReplaceLayout(R.id.fl_content)
-                .addTabItem("草莓", getResources().getDrawable(R.mipmap.icon01), getResources().getDrawable(R.mipmap.ic_launcher_round), FragmentA.class)
-                .addTabItem("凤梨", getResources().getDrawable(R.mipmap.icon02), getResources().getDrawable(R.mipmap.ic_launcher_round), FragmentB.class)
-                .addTabItem("樱桃", getResources().getDrawable(R.mipmap.icon03), getResources().getDrawable(R.mipmap.ic_launcher_round), FragmentC.class)
-                .addTabItem("香蕉", getResources().getDrawable(R.mipmap.icon04), getResources().getDrawable(R.mipmap.ic_launcher_round), FragmentD.class)
+                .addTabItem("草莓", getResources().getDrawable(R.mipmap.icon01), getResources().getDrawable(R.mipmap.icon_round), FragmentA.class)
+                .addTabItem("凤梨", getResources().getDrawable(R.mipmap.icon02), getResources().getDrawable(R.mipmap.icon_round), FragmentB.class)
+                .addTabItem("樱桃", getResources().getDrawable(R.mipmap.icon03), getResources().getDrawable(R.mipmap.icon_round), FragmentC.class)
+                .addTabItem("香蕉", getResources().getDrawable(R.mipmap.icon04), getResources().getDrawable(R.mipmap.icon_round), FragmentD.class)
                 .setOnTabChangeListener(new BottomTabBar.OnTabChangeListener() {
                     @Override
                     public void onTabChange(int position, View V) {
