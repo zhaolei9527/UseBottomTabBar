@@ -163,7 +163,6 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
     public BottomTabBar(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
-
         TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.BottomTabBar);
         if (attributes != null) {
             //图片宽度
@@ -190,7 +189,6 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
             tabBarBackgroundColor = attributes.getColor(R.styleable.BottomTabBar_tab_bar_background, Color.parseColor("#FFFFFF"));
             //分割线背景
             dividerBackgroundColor = attributes.getColor(R.styleable.BottomTabBar_tab_divider_background, Color.parseColor("#CCCCCC"));
-
             attributes.recycle();
         }
     }

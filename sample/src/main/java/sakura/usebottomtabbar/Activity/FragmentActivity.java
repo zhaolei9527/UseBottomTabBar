@@ -23,6 +23,22 @@ public class FragmentActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        //添加Frament替换的布局(仅绑定Fragment需要设置)
+        //=========参数设置START========
+        //.setChangeColor(getResources().getColor(R.color.colorAccent), getResources().getColor(R.color.colorPrimary))
+        //.setDividerColor(getResources().getColor(R.color.colorPrimaryDark))
+        //.setDividerHeight(2)
+        //默认false
+        //.isShowDivider(true)
+        //.setTabPadding(5, 5, 5)
+        //.setTabBarBackgroundColor(getResources().getColor(R.color.colorAccent))
+        //.setTabBarBackgroundResource(getResources().getDrawable(R.mipmap.icon))
+        //.setFontSize(12)
+        //.setImgSize(30, 30)
+        //参数设置需要在addTabItem()之前调用
+        //=========参数设置END=======
+        //添加TabItem
+
 
         ((BottomTabBar) findViewById(R.id.BottomTabBar))
                 .initFragmentorViewPager(getSupportFragmentManager())
@@ -38,6 +54,5 @@ public class FragmentActivity extends AppCompatActivity {
                     }
                 })
                 .commit();
-
     }
 }
