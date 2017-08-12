@@ -1,9 +1,13 @@
 
-## 就不能有个东西，能够一句话搞定Android底部导航栏，一键绑定Fragment、ViewPager吗？所以，这个BottomTabBar产生了。
+## 就不能有个东西，能够一句话搞定Android底部导航栏，一键绑定Fragment、ViewPager吗？
+## 所以，BottomTabBar产生了。
+
+![](https://img.shields.io/badge/Version-1.0.2-brightgreen.svg)
+[![](https://img.shields.io/badge/Go%20to-%E7%AE%80%E4%B9%A6-brightgreen.svg)](https://github.com/zhaolei9527/UseBottomTabBar)
 
 ## 相关内容参数详细介绍《简书》：[一句话搞定Android底部导航栏，一键绑定Fragment、ViewPager](https://github.com/zhaolei9527/UseBottomTabBar)
 
-![](https://img.shields.io/badge/Version-1.0.2-brightgreen.svg)
+
 
 <img src="https://github.com/zhaolei9527/UseBottomTabBar/blob/master/sample/src/main/res/drawable/5124923-4fbc8113a029953a.gif" width = "250" height = "400" alt="演示" align=center />
 
