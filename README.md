@@ -1,9 +1,9 @@
 
-## 就不能有个东西，能够一句话搞定Android底部导航栏，一键绑定Fragment、ViewPager吗？，所以，这个BottomTabBar产生了。
+## 就不能有个东西，能够一句话搞定Android底部导航栏，一键绑定Fragment、ViewPager吗？所以，这个BottomTabBar产生了。
 
 ## 相关内容参数详细介绍《简书》：[一句话搞定Android底部导航栏，一键绑定Fragment、ViewPager](https://github.com/zhaolei9527/UseBottomTabBar)
 
-<img src="https://github.com/zhaolei9527/UseBottomTabBar/blob/master/sample/src/main/res/drawable/5124923-4fbc8113a029953a.gif" width = "300" height = "400" alt="演示" align=center />
+<img src="https://github.com/zhaolei9527/UseBottomTabBar/blob/master/sample/src/main/res/drawable/5124923-4fbc8113a029953a.gif" width = "250" height = "400" alt="演示" align=center />
 
 # How to use UseBottomTabBar：
 **Step 1. Add the JitPack repository to your build file**
@@ -90,7 +90,7 @@
 
 **很简单，对不对，你想干什么，我都替你干**。
 
->划重点，这个initFragmentorViewPager ( getSupportFragmentManager() | ViewPager)方法一定要第一个调用，没有这个初始化，后边什么也做不了。
+#### 划重点，这个initFragmentorViewPager ( getSupportFragmentManager() | ViewPager)方法一定要第一个调用，没有这个初始化，后边什么也做不了。
 
 另外，上述实例的`addTabItem`是支持选中状态图片切换的方法，在此之外，还支持不需要切换图片的模式。
 ```java
@@ -129,4 +129,9 @@
                 })
                 .commit();
 ```
+
+**觉得还不够方便？还想要什么功能？告诉我！欢迎Issues，欢迎Star**
+
 ****
+
+
