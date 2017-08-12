@@ -73,6 +73,7 @@
                 .addTabItem("香蕉", getResources().getDrawable(R.mipmap.icon04), getResources().getDrawable(R.mipmap.icon_round))
                 .commit(); 
 ```
+#### 划重点，这个initFragmentorViewPager ( getSupportFragmentManager() | ViewPager)方法一定要第一个调用，没有这个初始化，后边什么也做不了。还有，记得 Commit。
 
 **代码可配置参数方法：**
 
@@ -89,8 +90,6 @@
 | **setDividerColor** | **设置分割线的颜色** |
 
 **很简单，对不对，你想干什么，我都替你干**。
-
-#### 划重点，这个initFragmentorViewPager ( getSupportFragmentManager() | ViewPager)方法一定要第一个调用，没有这个初始化，后边什么也做不了。
 
 另外，上述实例的`addTabItem`是支持选中状态图片切换的方法，在此之外，还支持不需要切换图片的模式。
 ```java
