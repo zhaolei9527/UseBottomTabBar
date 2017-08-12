@@ -3,9 +3,9 @@
 ## 所以，BottomTabBar产生了。
 
 ![](https://img.shields.io/badge/Version-1.0.2-brightgreen.svg)
-[![](https://img.shields.io/badge/Go%20to-%E7%AE%80%E4%B9%A6-brightgreen.svg)](https://github.com/zhaolei9527/UseBottomTabBar)
+[![](https://img.shields.io/badge/Go%20to-%E7%AE%80%E4%B9%A6-brightgreen.svg)](http://www.jianshu.com/p/1dd8092d85f4)
 
-## 相关内容参数详细介绍《简书》：[一句话搞定Android底部导航栏，一键绑定Fragment、ViewPager](https://github.com/zhaolei9527/UseBottomTabBar)
+## 相关内容参数详细介绍《简书》：[一句话搞定Android底部导航栏，一键绑定Fragment、ViewPager](http://www.jianshu.com/p/1dd8092d85f4)
 
 
 
