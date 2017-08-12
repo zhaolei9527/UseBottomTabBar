@@ -3,6 +3,8 @@
 
 ## 相关内容参数详细介绍《简书》：[一句话搞定Android底部导航栏，一键绑定Fragment、ViewPager](https://github.com/zhaolei9527/UseBottomTabBar)
 
+<img src="https://img.shields.io/badge/Build-1.0.2-brightgreen.svg" align=center />
+
 <img src="https://github.com/zhaolei9527/UseBottomTabBar/blob/master/sample/src/main/res/drawable/5124923-4fbc8113a029953a.gif" width = "250" height = "400" alt="演示" align=center />
 
 # How to use UseBottomTabBar：
