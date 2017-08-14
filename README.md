@@ -9,7 +9,7 @@
 
 
 
-<img src="https://github.com/zhaolei9527/UseBottomTabBar/blob/master/sample/src/main/res/drawable/5124923-4fbc8113a029953a.gif" width = "250" height = "400" alt="演示" align=center />
+<img src="https://github.com/zhaolei9527/UseBottomTabBar/blob/master/sample/src/main/res/drawable/a.gif" width = "250" height = "400" alt="演示" align=center />
 
 # How to use UseBottomTabBar：
 **Step 1. Add the JitPack repository to your build file**
