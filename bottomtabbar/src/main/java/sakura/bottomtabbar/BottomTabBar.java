@@ -67,8 +67,8 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
     private LinearLayout mTabContent;
     private LinearLayout.LayoutParams tab_item_imgparams;
     private LayoutParams tab_item_tvparams;
-
     private int mReplaceLayout = 0;
+    private OnTabChangeListener listener=null;
 
     //mViewpager界面滑动
     @Override
@@ -126,7 +126,9 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
                     changeTab(i);
                 }
                 //绑定点击监听回调
-                listener.onTabChange(i, v);
+                if (listener!=null){
+                    listener.onTabChange(i, v);
+                }
             }
         }
     }
@@ -153,7 +155,6 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
         void onTabChange(int position, View V);
     }
 
-    private OnTabChangeListener listener;
 
     public BottomTabBar(Context context) {
         super(context);
