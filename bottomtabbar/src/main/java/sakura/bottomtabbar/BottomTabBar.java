@@ -125,6 +125,8 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
                     relaceFrament(i);
                     changeTab(i);
                 }
+
+
                 //绑定点击监听回调
                 if (listener!=null){
                     listener.onTabChange(i, v);
