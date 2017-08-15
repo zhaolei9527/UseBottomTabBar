@@ -25,7 +25,7 @@
 **Step 2. Add the dependency**
 ```java
 	dependencies {
-	     compile 'com.github.zhaolei9527:UseBottomTabBar:v1.0.2'
+	     compile 'com.github.zhaolei9527:UseBottomTabBar:v1.0.3'
 	}
 ```
 
