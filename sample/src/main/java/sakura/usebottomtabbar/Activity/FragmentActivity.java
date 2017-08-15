@@ -38,8 +38,6 @@ public class FragmentActivity extends AppCompatActivity {
         //参数设置需要在addTabItem()之前调用
         //=========参数设置END=======
         //添加TabItem
-
-
         ((BottomTabBar) findViewById(R.id.BottomTabBar))
                 .initFragmentorViewPager(getSupportFragmentManager())
                 .addReplaceLayout(R.id.fl_content)
