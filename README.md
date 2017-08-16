@@ -87,7 +87,7 @@
 |:-------------:|:-------------:|
 | **setImgSize** | **设置图片的尺寸** |
 | **setFontSize** | **设置文字的尺寸** |
-| **setTabPadding** | **设置Tab的padding值* |
+| **setTabPadding** | **设置Tab的padding值** |
 | **setChangeColor** | **设置选中未选中的颜色** |
 | **setTabBarBackgroundColor** | **设置BottomTabBar的整体背景颜色** |
 | **setTabBarBackgroundResource** | **设置BottomTabBar的整体背景图片** |
