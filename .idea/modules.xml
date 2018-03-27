@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UseBottomTabBar.iml" filepath="$PROJECT_DIR$/UseBottomTabBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UseBottomTabBar.iml" filepath="$PROJECT_DIR$/UseBottomTabBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/bottomtabbar/bottomtabbar.iml" filepath="$PROJECT_DIR$/bottomtabbar/bottomtabbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bottomtabbar/bottomtabbar.iml" filepath="$PROJECT_DIR$/bottomtabbar/bottomtabbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
     </modules>
   </component>

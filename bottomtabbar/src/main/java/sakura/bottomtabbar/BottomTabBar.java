@@ -13,6 +13,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +21,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +29,7 @@ import java.util.List;
  * Created by 赵磊 on 2017/8/11.
  */
 
-public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChangeListener, View.OnClickListener {
+public class BottomTabBar extends LinearLayout implements ViewPager.OnPageChangeListener, View.OnClickListener {
 
     private Context context;
     private LinearLayout mLayout;
@@ -68,7 +70,7 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
     private LinearLayout.LayoutParams tab_item_imgparams;
     private LayoutParams tab_item_tvparams;
     private int mReplaceLayout = 0;
-    private OnTabChangeListener listener=null;
+    private OnTabChangeListener listener = null;
 
     //mViewpager界面滑动
     @Override
@@ -108,9 +110,17 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
 
     }
 
+    View last = null;
+
     //Tab点击事件处理
     @Override
     public void onClick(View v) {
+        if (last == v) {
+            Log.e("BottomTabBar", "重复点击");
+            return;
+        } else {
+            last = v;
+        }
         for (int i = 0; i < tabIdList.size(); i++) {
             if (tabIdList.get(i).equals(v.getTag())) {
                 if (mViewpager != null) {
@@ -126,7 +136,7 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
                     changeTab(i);
                 }
                 //绑定点击监听回调
-                if (listener!=null){
+                if (listener != null) {
                     listener.onTabChange(i, v);
                 }
             }
@@ -338,6 +348,7 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
         tab_item_tv.setTextSize(fontSize);
         tab_item_tv.setText(name);
         if (tabIdList.size() == 1) {
+            last = TabItem;
             tab_item_tv.setTextColor(selectColor);
         } else {
             tab_item_tv.setTextColor(unSelectColor);
@@ -379,6 +390,7 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
         tab_item_tv.setTextSize(fontSize);
         tab_item_tv.setText(name);
         if (tabIdList.size() == 1) {
+            last = TabItem;
             tab_item_tv.setTextColor(selectColor);
             tab_item_img.setBackground(selectdrawable);
         } else {
@@ -430,6 +442,7 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
         tab_item_tv.setTextSize(fontSize);
         tab_item_tv.setText(name);
         if (tabIdList.size() == 1) {
+            last = TabItem;
             tab_item_tv.setTextColor(selectColor);
         } else {
             tab_item_tv.setTextColor(unSelectColor);
@@ -480,6 +493,7 @@ public class BottomTabBar  extends LinearLayout implements ViewPager.OnPageChang
         tab_item_tv.setTextSize(fontSize);
         tab_item_tv.setText(name);
         if (tabIdList.size() == 1) {
+            last = TabItem;
             tab_item_tv.setTextColor(selectColor);
             tab_item_img.setBackground(selectdrawable);
         } else {
